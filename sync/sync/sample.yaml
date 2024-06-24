@@ -1,0 +1,10 @@
+files:
+  - path: "test/file1.txt"
+    content: |
+      Hello, this is file 1.
+  - path: "test/file2.txt"
+    content: |
+      Hi, this is file 2.
+  - path: "test/file3.txt"
+    content: |
+      Hey, this is file 3.

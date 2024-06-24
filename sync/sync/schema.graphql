@@ -1,0 +1,8 @@
+type File {
+  path: String!
+  content: String!
+}
+
+type SyncProject {
+  files: [File!]!
+}
