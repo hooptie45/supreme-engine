@@ -1,8 +1,6 @@
-Functions for your AI project do not need to be written in Python; you can implement functions in any language that suits your use case and environment. However, Python is often chosen for such tasks due to its extensive support for AI and machine learning libraries, as well as the availability of robust API interaction libraries like `requests`, `httparty`, and `faraday`. If you prefer to use another language, you can integrate functions written in that language by making use of inter-process communication (IPC) or RESTful APIs.
 
-Here's a design document to support this flexibility:
 
-### Design Document for Multi-Language AI Project Structure
+### Design Document for Multi-Language Project Structure
 
 #### 1. Overview
 
