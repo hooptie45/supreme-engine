@@ -1,0 +1,27 @@
+type ChatSummary {
+    matchId: ID!
+    name: String!
+    totalHistorySizeInLines: Int!
+    totalHistorySizeInBytes: Int!
+    sentiment: String!
+    s3Dump: String!
+}
+
+input ManualExportInput {
+    userId: ID!
+    partnerId: ID!
+    chatDump: String!
+}
+
+type Mutation {
+    manualExportConversation(input: ManualExportInput!): ManualExportResult
+}
+
+type ManualExportResult {
+    affectedChats: [ChatSummary!]!
+    message: String!
+}
+
+type Query {
+    listChats(userId: ID!): [ChatSummary!]!
+}
